@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:XF101Shell"
+       x:Class="XF101Shell.AppShell">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Image Source="https://blogs.microsoft.com/wp-content/uploads/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg"/>
+
+            </StackLayout>
+        </DataTemplate>
+
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem Title="Blue" Icon="TabDot">
+        <ShellContent ContentTemplate="{DataTemplate local:BluePage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Orange" Icon="TabDot">
+        <ShellContent ContentTemplate="{DataTemplate local:OrangePage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Yellow" Icon="TabDot">
+        <ShellContent ContentTemplate="{DataTemplate local:YellowPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Green" Icon="TabDot">
+        <ShellContent ContentTemplate="{DataTemplate local:GreenPage}" />
+    </FlyoutItem>
+
+</Shell>
